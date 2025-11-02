@@ -1,0 +1,105 @@
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body p-10 text-center">
+
+            <form #loginForm="ngForm" (ngSubmit)="isLogin ? onLogin(loginForm) : onRegister(loginForm)">
+              <div class="mb-md-5 mt-md-4 pb-5">
+
+                @if(isLogin){
+                  <h2 class="fw-bold mb-2 text-uppercase">Sign In</h2>
+                }@else{
+                  <h2 class="fw-bold mb-2 text-uppercase">Sign Up</h2>
+                }
+                <p class="text-white-50 mb-5">Please enter your email and password!</p>
+
+                <div *ngIf="errorMessage" class="alert alert-danger alert-dismissible fade show" role="alert">
+                  {{ errorMessage }}
+                  <button type="button" class="btn-close btn-close-white" (click)="errorMessage = ''"></button>
+                </div>
+
+                <div class="form-outline form-white mb-2">
+                  <input
+                    type="email"
+                    id="typeEmailX"
+                    class="form-control form-control-lg"
+                    name="email"
+                    [(ngModel)]="loginData.email"
+                    #email="ngModel"
+                    required
+                    email
+                    [class.is-invalid]="email.invalid && (email.touched || loginForm.submitted)" />
+                  <label class="form-label" for="typeEmailX">Email</label>
+
+                  <div *ngIf="email.invalid && (email.touched || loginForm.submitted)" class="invalid-feedback text-start">
+                    <div *ngIf="email.errors?.['required']">Email is required</div>
+                    <div *ngIf="email.errors?.['email']">Please enter a valid email address</div>
+                  </div>
+                </div>
+
+                <div class="form-outline form-white mb-2">
+                  <input
+                    type="password"
+                    id="typePasswordX"
+                    class="form-control form-control-lg"
+                    name="password"
+                    [(ngModel)]="loginData.password"
+                    #password="ngModel"
+                    required
+                    [class.is-invalid]="password.invalid && (password.touched || loginForm.submitted)" />
+                  <label class="form-label" for="typePasswordX">Password</label>
+
+                  <div *ngIf="password.invalid && (password.touched || loginForm.submitted)" class="invalid-feedback text-start">
+                    <div *ngIf="password.errors?.['required']">Password is required</div>
+                  </div>
+                </div>
+
+                @if(!isLogin) {
+                <div class="form-outline form-white mb-2">
+                  <input
+                    type="password"
+                    id="typeConfirmPasswordX"
+                    class="form-control form-control-lg"
+                    name="confirmPassword"
+                    [(ngModel)]="confirmPassword"
+                    #confirmPasswordInput="ngModel"
+                    required
+                    [class.is-invalid]="confirmPasswordInput.invalid && (confirmPasswordInput.touched || loginForm.submitted)" />
+                  <label class="form-label" for="typeConfirmPasswordX">Confirm Password</label>
+
+                  <div *ngIf="confirmPasswordInput.invalid && (confirmPasswordInput.touched || loginForm.submitted)" class="invalid-feedback text-start">
+                    <div *ngIf="confirmPasswordInput.errors?.['required']">Please confirm your password</div>
+                  </div>
+                </div>
+                }
+
+                <button
+                  class="btn btn-outline-light btn-lg px-5"
+                  type="submit"
+                  [disabled]="isLoading">
+                  <span *ngIf="isLoading" class="spinner-border spinner-border-sm me-2"></span>
+                  {{ isLoading ? (isLogin ? 'Signing In...' : 'Signing Up...') : (isLogin ? 'Sign In' : 'Sign Up') }}
+                </button>
+              </div>
+            </form>
+
+            <div>
+              @if(isLogin){
+                <p class="mb-0">Don't have an account?
+                  <b (click)="changeLoggingType(false)" class="text-white-50 fw-bold" style="cursor: pointer;">Sign Up</b>
+                </p>
+              }@else{
+                <p class="mb-0">Already have an account?
+                  <b (click)="changeLoggingType(true)" class="text-white-50 fw-bold" style="cursor: pointer;">Sign In</b>
+                </p>
+              }
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

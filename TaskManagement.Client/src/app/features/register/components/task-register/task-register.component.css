@@ -1,0 +1,118 @@
+.dark-table {
+  background: transparent;
+  width: 100%;
+}
+
+.dark-table .mat-header-cell {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  border-bottom: 1px solid #495057;
+}
+
+.dark-table .mat-cell {
+  border-bottom: 1px solid #495057;
+  color: #e9ecef;
+}
+
+.dark-table .mat-row:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark-paginator {
+  background: transparent;
+  color: #ffffff;
+}
+
+.dark-paginator .mat-paginator-page-size,
+.dark-paginator .mat-paginator-range-actions {
+  color: #ffffff;
+}
+
+.dark-paginator .mat-select-value {
+  color: #ffffff;
+}
+
+.dark-paginator .mat-form-field-underline {
+  background-color: #495057;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #495057;
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: #0d6efd;
+}
+
+::ng-deep .mat-input-element {
+  color: #ffffff !important;
+}
+
+::ng-deep .mat-form-field-label {
+  color: #6c757d !important;
+}
+
+::ng-deep .mat-paginator-icon {
+  fill: #ffffff;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-pending {
+  background-color: #ffc107;
+  color: #000000;
+}
+
+.status-in-progress {
+  background-color: #0dcaf0;
+  color: #000000;
+}
+
+.status-completed {
+  background-color: #198754;
+  color: #ffffff;
+}
+
+.status-cancelled {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 0 10px;
+  }
+
+  .d-flex.justify-content-between {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.gradient-custom {
+background: #8d66b6;
+
+background: -webkit-linear-gradient(to right, rgb(181, 134, 231), rgba(37, 117, 252, 1));
+
+background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+}
+
+.mdc-text-field__input{
+  color: white !important;
+}
+
+.blur-background {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}

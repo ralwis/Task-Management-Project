@@ -1,0 +1,69 @@
+<div class="dialog-container">
+  @if(isCreation()){
+    <h2 mat-dialog-title class="text-black">Create New Task</h2>
+  }@else {
+    <h2 mat-dialog-title class="text-black">Edit Task</h2>
+  }
+
+  <mat-dialog-content class="mat-typography">
+    <form [formGroup]="taskForm" class="task-form">
+
+      <div *ngIf="errorMessage" class="alert alert-danger alert-dismissible fade show mb-3" role="alert">
+        {{ errorMessage }}
+        <button type="button" class="btn-close btn-close-white" (click)="errorMessage = ''"></button>
+      </div>
+
+      <mat-form-field appearance="outline" class="w-100 mb-3">
+        <mat-label>Title</mat-label>
+        <input matInput formControlName="title" placeholder="Enter task title">
+        <mat-error *ngIf="taskForm.get('title')?.hasError('required')">
+          Title is required
+        </mat-error>
+        <mat-error *ngIf="taskForm.get('title')?.hasError('minlength')">
+          Title must be at least 3 characters long
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="w-100 mb-3">
+        <mat-label>Description</mat-label>
+        <textarea matInput formControlName="description" placeholder="Enter task description" rows="3"></textarea>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="w-100 mb-3">
+        <mat-label>Due Date</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="dueDate">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="w-100 mb-3">
+        <mat-label>Status</mat-label>
+        <mat-select formControlName="statusId">
+          <mat-option *ngFor="let status of statusOptions()" [value]="status.id">
+            {{ status.displayName }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="taskForm.get('statusId')?.hasError('required')">
+          Status is required
+        </mat-error>
+      </mat-form-field>
+
+    </form>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end" class="dialog-actions">
+    <button mat-button (click)="onNoClick()" [disabled]="isLoading">Cancel</button>
+    @if(isCreation()){
+      <button mat-raised-button color="primary" (click)="onSubmit()" [disabled]="isLoading">
+        <span *ngIf="isLoading" class="spinner-border spinner-border-sm me-2"></span>
+        {{ isLoading ? 'Creating...' : 'Create Task' }}
+      </button>
+    }@else {
+      <button mat-raised-button color="primary" (click)="onSubmit()" [disabled]="isLoading">
+        <span *ngIf="isLoading" class="spinner-border spinner-border-sm me-2"></span>
+        {{ isLoading ? 'Updating...' : 'Update' }}
+      </button>
+    }
+
+  </mat-dialog-actions>
+</div>

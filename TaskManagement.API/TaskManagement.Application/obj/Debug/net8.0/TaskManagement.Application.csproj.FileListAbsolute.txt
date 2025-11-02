@@ -1,0 +1,15 @@
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Application\bin\Debug\net8.0\TaskManagement.Application.deps.json
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Application\bin\Debug\net8.0\TaskManagement.Application.dll
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Application\bin\Debug\net8.0\TaskManagement.Application.pdb
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Application\bin\Debug\net8.0\TaskManagement.Domain.dll
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Application\bin\Debug\net8.0\TaskManagement.Domain.pdb
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Application\obj\Debug\net8.0\TaskManagement.Application.csproj.AssemblyReference.cache
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Application\obj\Debug\net8.0\TaskManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Application\obj\Debug\net8.0\TaskManagement.Application.AssemblyInfoInputs.cache
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Application\obj\Debug\net8.0\TaskManagement.Application.AssemblyInfo.cs
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Application\obj\Debug\net8.0\TaskManagement.Application.csproj.CoreCompileInputs.cache
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Application\obj\Debug\net8.0\TaskMana.B5C26166.Up2Date
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Application\obj\Debug\net8.0\TaskManagement.Application.dll
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Application\obj\Debug\net8.0\refint\TaskManagement.Application.dll
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Application\obj\Debug\net8.0\TaskManagement.Application.pdb
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Application\obj\Debug\net8.0\ref\TaskManagement.Application.dll

@@ -1,0 +1,17 @@
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Infrastructure.deps.json
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Infrastructure.dll
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Infrastructure.pdb
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Application.dll
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Domain.dll
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Application.pdb
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Domain.pdb
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.csproj.AssemblyReference.cache
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.AssemblyInfoInputs.cache
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.AssemblyInfo.cs
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskMana.BCA0E1A6.Up2Date
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.dll
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Infrastructure\obj\Debug\net8.0\refint\TaskManagement.Infrastructure.dll
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.pdb
+E:\Career\Learning\Task Management Project\TaskManagement.API\TaskManagement.Infrastructure\obj\Debug\net8.0\ref\TaskManagement.Infrastructure.dll
